@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'com.github.yanex:takenoko:0.1'
+    implementation project(":ExRoute")
+    implementation 'com.squareup:javapoet:1.10.0'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
